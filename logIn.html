@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="form">
+        <a  id="menuButton" href="index.html">
+            <h2>RudeGPT</h2>
+        </a>       
+        <h3>LOGIN / CREATE ACCOUNT</h2>
+        <h4>Email:</h3> <input label="email login" id="email-login" type=text placeholder="Enter Email"> 
+        <h4>Password:</h3><input label="password" id="password-login" type=password placeholder="Enter Password"> 
+        <button onclick="signIn()">Login user</button>
+        <button onclick="createLogin()">Create Account</button>
+    </div>
+    
+</body>
+</html>
+

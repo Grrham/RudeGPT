@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RudeGPT</title>
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div id="chatBox">
+        <a  id="menuButton" href="index.html">
+            <h2>RudeGPT</h2>
+        </a>
+        
+        <div id="display"></div>
+        <div id="loading-spinner"></div>
+
+
+        <label>Message:</label> <input id="content" placeholder="Send a Message!"></textarea> 
+        <button id="sendButton" onclick="sendChat()">Send</button>
+        <button id="signOutButton" onclick="signOut()">Sign Out</button>
+    </div>
+
+
+</body>
+</html>
